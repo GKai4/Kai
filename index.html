@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tc.css">
+</head>
+<body>
+    <h2>Anime Titles</h2>
+    <div class="horizonal-scorw">
+    <div class="container">
+        <div class="Item">
+            <figure>
+                <a href="https://t.me/AnimeZone_MM/107" target="_blank">
+                    <img src="../01_lesson/Image/A Silent Voice Anime.jfif" alt="" width="275px" height="375px">
+                </a>
+                <figcaption>
+                    A Silent Voice
+                </figcaption>
+            </figure>
+        </div>
+        <div class="Item">
+            <figure>
+                <a href="https://t.me/nyanimemyanmar/1872" target="_blank">
+                    <img src="../01_lesson/Image/Attack On Titan.jfif" alt="" width="275px" height="375px">
+                </a>
+                <figcaption>Attack On Titan</figcaption>
+            </figure>
+        </div>
+        <div class="Item">
+            <figure>
+                <a href="https://t.me/Bleachmmsub1" target="_blank">
+                    <img src="../01_lesson/Image/Bleach.jfif" alt="" width="275px" height="375px">
+                </a>
+                <figcaption>Bleach</figcaption>
+            </figure>
+        </div>
+        <div class="Item">
+            <figure>
+                <a href="https://t.me/nyanimemyanmar/1311" target="_blank">
+                    <img src="../01_lesson/Image/Death Note.jfif" alt="" width="275px" height="375px">
+                </a>    
+                <figcaption>Death Note</figcaption>
+            </figure>
+        </div>
+        <div class="Item">
+            <figure>
+                <a href="https://t.me/nyanimemyanmar/3820" target="_blank">
+                    <img src="../01_lesson/Image/Demon Slayer.jfif" alt="" width="275px" height="375px">
+                </a>    
+                <figcaption>Demon Slayer</figcaption>
+            </figure>
+        </div>
+        <div class="Item">
+            <figure>
+                <a href="https://t.me/nyanimemyanmar/705" target="_blank">
+                    <img src="../01_lesson/Image/Haikyuu.jfif" alt="" width="275px" height="375px">
+                </a>    
+                <figcaption>Haikyuu</figcaption>
+            </figure>
+        </div>
+        <div class="Item">
+            <figure>
+                <a href="https://t.me/moviescitycartoon23/358" target="_blank">
+                    <img src="../01_lesson/Image/I Want to Eat Your Pancreas.jfif" alt="" width="275px" height="375px">
+                </a>    
+                <figcaption>I Want to Eat Your Pancreas</figcaption>
+            </figure>
+        </div>
+        <div class="Item">
+            <figure>
+                <a href="https://t.me/DreamNightanime/4988" target="_blank">
+                    <img src="../01_lesson/Image/Jujutsu Kaisen.jfif" alt="" width="275px" height="375px">
+                </a>    
+                <figcaption>JuJutsu Kaisen</figcaption>
+            </figure>
+        </div>
+        <div class="Item">
+            <figure>
+                <a href="https://t.me/onepiece557" target="_blank">
+                    <img src="../01_lesson/Image/One Piece.jfif" alt="" width="275px" height="375px">
+                </a>    
+                <figcaption>One Piece</figcaption>
+            </figure>
+        </div>
+        <div class="Item">
+            <figure>
+                <a href="https://t.me/moviescitycartoon23/612" target="_blank">
+                    <img src="../01_lesson/Image/Pokemon Go.jfif" alt="" width="275px" height="375px">
+                </a>    
+                <figcaption>Pokemon Go</figcaption>
+            </figure>
+        </div>
+    </div>
+    </div>
+    <script>
+        let isDragging = false;
+        let startX, scrollLeft;
+      
+        document.addEventListener('mousedown', (e) => {
+          if (e.button !== 0) return; // Left mouse button only
+          isDragging = true;
+          startX = e.pageX;
+          scrollLeft = window.scrollX;
+          document.body.classList.add('dragging'); // Change cursor style
+        });
+      
+        document.addEventListener('mousemove', (e) => {
+          if (!isDragging) return;
+          const dx = e.pageX - startX;
+          window.scrollTo(scrollLeft - dx, 0); // Scroll page horizontally based on mouse movement
+        });
+      
+        document.addEventListener('mouseup', () => {
+          isDragging = false;
+          document.body.classList.remove('dragging'); // Reset cursor style
+        });
+      
+        document.addEventListener('mouseleave', () => {
+          isDragging = false; // Stop dragging if mouse leaves the window
+          document.body.classList.remove('dragging');
+        });
+      </script>
+</body>
+</html>

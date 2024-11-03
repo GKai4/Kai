@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    width: max-content;
+    gap: 1rem;
+    
+}
+.horizonal-scorw{
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-color: transparent transparent;
+}
+.horizonal-scorw::-webkit-scrollbar {
+    display: none;
+}
+body{
+    cursor: grab;overflow-x: hidden; /* Enable horizontal scroll */
+    overflow-y: hidden;
+}
+body.dragging {
+    cursor: grabbing;
+  }
+  .Item{
+    /* border: 1px solid black; */
+    background-color: rgba(163, 163, 163, 0.123);
+    box-shadow: 10px 10px 15px rgba(73, 73, 73, 0.26);
+    border-radius: 10px;
+  }
+  figcaption{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+  }
